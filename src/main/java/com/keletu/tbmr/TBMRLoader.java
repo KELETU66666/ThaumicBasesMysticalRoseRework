@@ -3,8 +3,6 @@ package com.keletu.tbmr;
 import com.google.common.collect.Lists;
 import zone.rong.mixinbooter.ILateMixinLoader;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class TBMRLoader implements ILateMixinLoader {

@@ -1,20 +1,14 @@
 package com.keletu.tbmr;
 
 import com.keletu.tbmr.items.TBMRItems;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import thaumcraft.api.ThaumcraftApi;
-import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.AspectHelper;
 import thaumcraft.api.aspects.AspectList;
-import thaumcraft.api.crafting.ShapedArcaneRecipe;
-import thaumcraft.api.items.ItemsTC;
 
 
 @Mod(modid = TBMRMod.MODID, name = TBMRMod.NAME, version = TBMRMod.VERSION, acceptedMinecraftVersions = TBMRMod.MC_VERSION,

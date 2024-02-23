@@ -1,0 +1,12 @@
+{
+  "minVersion": "0.8",
+  "package": "com.keletu.tbmr.mixins",
+  "refmap": "mixins.tbmr.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinBlockKnozeSeeds",
+    "MixinSmokingPipe"
+  ],
+  "client": [],
+  "server": []
+}

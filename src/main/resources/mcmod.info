@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "tbmr",
+    "name": "Thaumic Bases Mystical Rose Rework",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "authorList": ["keletu"],
+    "logoFile": "logo.png"
+  }
+]

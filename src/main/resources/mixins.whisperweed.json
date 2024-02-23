@@ -1,11 +1,10 @@
 {
   "minVersion": "0.8",
-  "package": "com.keletu.tbmr.mixins.tbu",
+  "package": "com.keletu.tbmr.mixins.reforbiddenMagic",
   "refmap": "mixins.tbmr.refmap.json",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinBlockKnozeSeeds",
-    "MixinSmokingPipe"
+    "MixinWhisperWeed"
   ],
   "client": [],
   "server": []

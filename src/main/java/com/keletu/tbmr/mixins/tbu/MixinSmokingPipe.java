@@ -1,4 +1,4 @@
-package com.keletu.tbmr.mixins;
+package com.keletu.tbmr.mixins.tbu;
 
 import com.rumaruka.thaumicbases.common.item.TBTobacco;
 import com.rumaruka.thaumicbases.init.TBItems;

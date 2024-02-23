@@ -1,4 +1,4 @@
-package com.keletu.tbmr.mixins;
+package com.keletu.tbmr.mixins.tbu;
 
 import com.keletu.tbmr.items.TBMRItems;
 import com.rumaruka.thaumicbases.common.block.BlockknozeSeed;

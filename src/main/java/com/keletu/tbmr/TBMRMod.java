@@ -17,7 +17,7 @@ public class TBMRMod
 {
     public static final String MODID = "tbmr";
     public static final String NAME = "Thaumic Bases Mystical Rose Rework";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "0.0.2";
     public static final String MC_VERSION = "[1.12.2]";
 
     @EventHandler

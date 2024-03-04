@@ -31,8 +31,8 @@ public abstract class MixinSmokingPipe {
         if (tobbaco.getItem() == TBItems.tobacco_knowledge) {
             if (!smoker.world.isRemote) {
                 for(Aspect a : Aspect.getPrimalAspects()) {
-                    OldResearch.proxy.playerKnowledge.addAspectPool(smoker.getGameProfile().getName(), a, (short) (isSilverwood ? 2 : 1));
-                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), (short) (isSilverwood ? 2 : 1), OldResearch.proxy.playerKnowledge.getAspectPoolFor(smoker.getGameProfile().getName(), a)), (EntityPlayerMP)smoker);
+                    OldResearch.proxy.playerKnowledge.addAspectPool(smoker.getGameProfile().getName(), a, (isSilverwood ? 2 : 1));
+                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), (isSilverwood ? 2 : 1), OldResearch.proxy.playerKnowledge.getAspectPoolFor(smoker.getGameProfile().getName(), a)), (EntityPlayerMP)smoker);
                 }
                 if (isSilverwood){
                     smoker.addExperience(1);

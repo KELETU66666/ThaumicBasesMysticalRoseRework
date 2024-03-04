@@ -53,8 +53,8 @@ public class MixinTBEvents {
                         AspectList al = eTags.aspects;
                         for(int i = 0; i < al.size(); ++i)
                         {
-                            OldResearch.proxy.playerKnowledge.addAspectPool(attacker.getGameProfile().getName(), al.getAspects()[i], (short) 1);
-                            PacketHandler.INSTANCE.sendTo(new PacketAspectPool(al.getAspects()[i].getTag(), (short) 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(attacker.getGameProfile().getName(), al.getAspects()[i])), (EntityPlayerMP)attacker);
+                            OldResearch.proxy.playerKnowledge.addAspectPool(attacker.getGameProfile().getName(), al.getAspects()[i], 1);
+                            PacketHandler.INSTANCE.sendTo(new PacketAspectPool(al.getAspects()[i].getTag(), 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(attacker.getGameProfile().getName(), al.getAspects()[i])), (EntityPlayerMP)attacker);
                             if(attacker.world.rand.nextBoolean())
                                 break;
                         }

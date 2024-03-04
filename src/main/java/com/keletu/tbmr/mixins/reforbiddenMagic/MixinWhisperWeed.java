@@ -52,8 +52,8 @@ public abstract class MixinWhisperWeed extends SubTileFunctional {
                         aspect = Aspect.getPrimalAspects().get(player.world.rand.nextInt(6));
                     else aspect = Aspect.getCompoundAspects()
                             .get(player.world.rand.nextInt(Aspect.getCompoundAspects().size()));
-                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), aspect, (short) 1);
-                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(aspect.getTag(), (short) 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), aspect)), (EntityPlayerMP) player);
+                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), aspect, 1);
+                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(aspect.getTag(), 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), aspect)), (EntityPlayerMP) player);
                 }
                 mana -= cost;
             }

@@ -37,19 +37,19 @@ public class ItemElementalKnowledgeFragments extends Item {
         if(!world.isRemote) {
             if(this == TBMRItems.mixed_fragment){
                 for(Aspect a : Aspect.getPrimalAspects()) {
-                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), a, (short) 2);
-                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), (short) 2, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), a)), (EntityPlayerMP)player);
+                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), a, 2);
+                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), 2, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), a)), (EntityPlayerMP)player);
                 }
             }
             else if (this == TBMRItems.flux_fragment) {
                 for(Aspect a : Aspect.getPrimalAspects()) {
-                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), a, (short) 1);
-                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), (short) 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), a)), (EntityPlayerMP)player);
+                    OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), a, 1);
+                    PacketHandler.INSTANCE.sendTo(new PacketAspectPool(a.getTag(), 1, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), a)), (EntityPlayerMP)player);
                     ThaumcraftApi.internalMethods.addWarpToPlayer(player, 1, IPlayerWarp.EnumWarpType.TEMPORARY);
                 }
             }else {
-                OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), aspect, (short) 8);
-                PacketHandler.INSTANCE.sendTo(new PacketAspectPool(aspect.getTag(), (short) 8, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), aspect)), (EntityPlayerMP) player);
+                OldResearch.proxy.playerKnowledge.addAspectPool(player.getGameProfile().getName(), aspect, 8);
+                PacketHandler.INSTANCE.sendTo(new PacketAspectPool(aspect.getTag(), 8, OldResearch.proxy.playerKnowledge.getAspectPoolFor(player.getGameProfile().getName(), aspect)), (EntityPlayerMP) player);
             }
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);

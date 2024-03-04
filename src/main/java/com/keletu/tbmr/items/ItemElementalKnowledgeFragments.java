@@ -1,6 +1,5 @@
 package com.keletu.tbmr.items;
 
-import com.rumaruka.thaumicbases.client.creativetabs.TBCreativeTabs;
 import com.wonginnovations.oldresearch.OldResearch;
 import com.wonginnovations.oldresearch.common.lib.network.PacketAspectPool;
 import com.wonginnovations.oldresearch.common.lib.network.PacketHandler;
@@ -15,6 +14,7 @@ import net.minecraft.world.World;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.capabilities.IPlayerWarp;
+import thaumcraft.common.config.ConfigItems;
 
 public class ItemElementalKnowledgeFragments extends Item {
     private Aspect aspect;
@@ -22,7 +22,7 @@ public class ItemElementalKnowledgeFragments extends Item {
         this.setMaxStackSize(64);
         this.setHasSubtypes(false);
         this.setMaxDamage(0);
-        this.setCreativeTab(TBCreativeTabs.TB_CREATIVEtabs);
+        this.setCreativeTab(ConfigItems.TABTC);
 
         this.aspect = aspect;
     }

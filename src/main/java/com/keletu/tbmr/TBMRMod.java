@@ -1,6 +1,7 @@
 package com.keletu.tbmr;
 
 import com.keletu.tbmr.items.TBMRItems;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -29,13 +30,13 @@ public class TBMRMod
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event){
-        ThaumcraftApi.registerObjectTag(TBMRItems.air_fragment.getDefaultInstance(), new AspectList().add(Aspect.AIR, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.fire_fragment.getDefaultInstance(), new AspectList().add(Aspect.FIRE, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.water_fragment.getDefaultInstance(), new AspectList().add(Aspect.WATER, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.earth_fragment.getDefaultInstance(), new AspectList().add(Aspect.EARTH, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.order_fragment.getDefaultInstance(), new AspectList().add(Aspect.ORDER, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.entropy_fragment.getDefaultInstance(), new AspectList().add(Aspect.ENTROPY, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.flux_fragment.getDefaultInstance(), new AspectList().add(Aspect.FLUX, 6).add(Aspect.PLANT, 1));
-        ThaumcraftApi.registerObjectTag(TBMRItems.mixed_fragment.getDefaultInstance(), new AspectList().add(Aspect.AIR, 6).add(Aspect.FIRE, 6).add(Aspect.WATER, 6).add(Aspect.EARTH, 6).add(Aspect.ORDER, 6).add(Aspect.ENTROPY, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.air_fragment), new AspectList().add(Aspect.AIR, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.fire_fragment), new AspectList().add(Aspect.FIRE, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.water_fragment), new AspectList().add(Aspect.WATER, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.earth_fragment), new AspectList().add(Aspect.EARTH, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.order_fragment), new AspectList().add(Aspect.ORDER, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.entropy_fragment), new AspectList().add(Aspect.ENTROPY, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.flux_fragment), new AspectList().add(Aspect.FLUX, 6).add(Aspect.PLANT, 1));
+        ThaumcraftApi.registerObjectTag(new ItemStack(TBMRItems.mixed_fragment), new AspectList().add(Aspect.AIR, 6).add(Aspect.FIRE, 6).add(Aspect.WATER, 6).add(Aspect.EARTH, 6).add(Aspect.ORDER, 6).add(Aspect.ENTROPY, 6).add(Aspect.PLANT, 1));
     }
 }

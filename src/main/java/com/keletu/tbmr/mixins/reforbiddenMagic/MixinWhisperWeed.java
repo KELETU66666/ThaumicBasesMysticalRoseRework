@@ -7,6 +7,7 @@ import keletu.forbiddenmagicre.compat.botania.flowers.SubTileWhisperweed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.util.math.AxisAlignedBB;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
@@ -20,9 +21,11 @@ import java.util.List;
 @Mixin(SubTileWhisperweed.class)
 public abstract class MixinWhisperWeed extends SubTileFunctional {
 
+    @Final
     @Shadow(remap = false)
     private static int cost;
 
+    @Final
     @Shadow(remap = false)
     private static int range;
     /**

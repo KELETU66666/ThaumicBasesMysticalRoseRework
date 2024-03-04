@@ -35,7 +35,7 @@ public abstract class MixinBlockKnozeSeeds {
      */
     @Overwrite(remap = false)
     public List<ItemStack> getDrops(IBlockAccess w, BlockPos pos, IBlockState state, int fortune) {
-        ArrayList<ItemStack> ret = new ArrayList();
+        ArrayList<ItemStack> ret = new ArrayList<>();
         if (w instanceof World) {
             World world = (World) w;
             ret.add(new ItemStack(TBItems.knozeseed, 1));
